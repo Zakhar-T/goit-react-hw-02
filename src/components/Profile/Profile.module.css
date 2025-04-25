@@ -1,0 +1,51 @@
+.container {
+  margin-bottom: 32px;
+  border: 5px solid black;
+  border-radius: 5%;
+  width: 500px;
+}
+
+.userWrapper {
+  padding: 16px;
+  border-bottom: 5px solid darkgray;
+}
+
+.userAvatar {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 8px;
+  border-radius: 50%;
+  background-color: rgb(41, 37, 37);
+}
+
+.userAvatar + p {
+  margin-bottom: 8px;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.userWrapper p + p {
+  color: darkgray;
+  font-size: 22px;
+  text-align: center;
+}
+
+.userStatsList {
+  display: flex;
+}
+
+.userStats {
+  padding: 16px;
+  border-right: 5px solid darkgray;
+  width: calc(100% / 3);
+  text-align: center;
+}
+
+.userStats:last-child {
+  border-right: none;
+}
+
+.userStats span {
+  font-size: 22px;
+}

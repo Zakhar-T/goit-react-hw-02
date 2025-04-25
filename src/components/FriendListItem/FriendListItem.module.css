@@ -1,0 +1,25 @@
+.friendAvatar {
+  margin-bottom: 16px;
+}
+
+.container p {
+  text-align: center;
+}
+
+.container p:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.friendName {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.friendStatus {
+  color: red;
+  font-size: 18px;
+}
+
+.friendOnline {
+  color: green;
+}
