@@ -1,13 +1,13 @@
 import styles from './Feedback.module.css';
 
-export default function Feedback({ clicks, total }) {
+export default function Feedback({ clicks, total, positivePercent }) {
   return (
     <ul className={styles.feedback}>
       <li>Good: {clicks.good}</li>
       <li>Neutral: {clicks.neutral}</li>
       <li>Bad: {clicks.bad}</li>
       <li>Total: {total}</li>
-      <li>Positive: {Math.round((clicks.good / total) * 100)}%</li>
+      <li>Positive: {positivePercent}%</li>
     </ul>
   );
 }

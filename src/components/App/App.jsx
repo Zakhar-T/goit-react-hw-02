@@ -17,6 +17,7 @@ export default function App() {
     };
   });
   const stateSum = state.good + state.neutral + state.bad;
+  const goodPercentage = Math.round((state.good / stateSum) * 100);
 
   const updateFeedback = (feedbackType) => {
     if (feedbackType === 'reset') {
@@ -38,7 +39,11 @@ export default function App() {
       <Description />
       <Options updateState={updateFeedback} votes={stateSum} />
       {stateSum ? (
-        <Feedback clicks={state} total={stateSum} />
+        <Feedback
+          clicks={state}
+          total={stateSum}
+          positivePercent={goodPercentage}
+        />
       ) : (
         <Notification />
       )}
